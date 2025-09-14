@@ -1,0 +1,164 @@
+/* --- Global Styles & Fonts --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #103243;
+    color: #F5F5F5;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #554348;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #3A3A3A;
+}
+
+/* --- Header --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #103243; /* Added background for sticky header */
+    
+    /* Sticky Header Properties */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 90%; /* (100% - 10% padding) */
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+header nav a {
+    margin-left: 0.8rem;
+    font-size: 0.95rem; /* Slightly reduce font size for better fit */
+}
+
+/* Style for the currently active nav link */
+header nav a.active-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* --- Main Content --- */
+main {
+    padding: 0 5%;
+}
+
+.page {
+    min-height: 80vh; /* Give sections height */
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #304f5c; /* Separator line between sections */
+}
+section:last-child {
+    border-bottom: none;
+}
+
+
+/* --- Content Boxes --- */
+.content-box-horizontal, .content-box-vertical {
+    background-color: #DDE2C6;
+    color: #3A3A3A;
+    padding: 4rem;
+    width: 100%;
+    max-width: 960px;
+    box-sizing: border-box; /* Ensures padding is inside the width */
+}
+
+.content-box-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content-box-horizontal .image-container {
+    flex: 1;
+}
+
+.content-box-horizontal .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-box-horizontal .text-container {
+    flex: 2;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+
+.content-box-vertical p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* --- List Styles --- */
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-box-vertical li {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.content-box-vertical li strong {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.content-box-vertical li span {
+    float: right;
+    font-style: italic;
+    color: #58646b;
+}
+
+section#projects ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+
+section#projects li li {
+    margin-bottom: 1rem;
+}
+
+.content-box-vertical a {
+    color: #103243;
+    text-decoration: underline;
+}
